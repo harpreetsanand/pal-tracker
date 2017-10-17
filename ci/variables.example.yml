@@ -31,3 +31,7 @@ ACryHuxuByPVYKikgcRLaE6MryIm1D2Wr5SZDdyXULJI3nojWPkeibWuOfRrdGLY
 WpF2UoIvukUZ98HscrqWWHlL3tRsMO1ZjmwAapNVzzjNaC6h76/wH9CN9hMYzDob
 MKRmUnfgq+OtKyGXRCRxDHJRe4PPkDLRosVwofdlpYqV/L5iU0Ml
 -----END RSA PRIVATE KEY-----
+
+aws-access-key-id: <YOUR_ACCESS_KEY>
+aws-secret-access-key: <YOUR_SECRET_KEY>
+aws-bucket: <YOUR_AWS_S3_BUCKET>
