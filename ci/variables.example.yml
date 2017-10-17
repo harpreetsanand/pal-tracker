@@ -1,0 +1,33 @@
+cf-api-url: https://api.sys.longs.pal.pivotal.io
+cf-username: harpreet.anand@emc.com
+cf-password: c88d79e4
+cf-org: hanand-pal
+github-repository: git@github.com:harpreetsanand/pal-tracker.git
+github-private-key: |
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAyV5Xb0qM9xqZsV5I7pChHj58p+/TrIRL/EJw5RkaQ3CRd1k/
+c4fBrUIrlDMZz7EBPi0c0K3upPEV3a7pd90Gxy/e7GWpE+ss+SXlJn2fzIrirS5t
+ZsdL8p9qzDihzPPU0kmWysE3WadgYiw/xqDbZVcMLyss6JjNagp9vrD8MX1svenB
+oxkkRdTaS6/irqfHKcpphfKWWxUQaN3Ou9xBuskdq4tcUFZoN/oU3tHZt6WcnvVL
+G3eknMqJyuaZ/l6eLn2iwl7tgZafBTNx121kSLi+kJaCMKiOeILzKqBVyQNYuoCf
+K1hODEfJpvvAbvOsSuQnBT42e+P+1ng3w0Xa6wIDAQABAoIBAH/R4q5CJDi2Kdjs
+gF7ub1dDUt1G3pYjZBg8FG1YAdPNIIkhnaU4BzhzSDZKOZgcQy20dRYBUfphDgAp
+hwkOw76sJFTqMujx3xpHc617EHRFtJ05WzhiSVM43hHD4PC31d+l1pHdE8VU+VlX
+vSPX92vcVV+biGYcmEc3YZopveurEZz9vjFCe/dxZLuWEMhJ3wyYrV9SEIYxPoyS
+L3qyyrfijSl/S1xOGTn6Z304Y2stjh4fRNGgw3zdQguDB5E1f1rfKFzaNlPu7TtT
+dh6VQ7PWZVQVbxTcHhBHSkAeRW7ZSjr3ZgHclPp6sVj/0pAGV/oGu/Omi4nkFBeg
+FN/2NAECgYEA45hO8BeI80ZPil5x9f3UI6Tsf2btHFJrr2A4/XeYBw6ph6pc6UdJ
+IS55LZNhVNtC/h7Kp29JDiBpiT6SRyc27wBGrAw7+Ox6GUfy6iuBYn1l9so7SDzJ
+fv19TiahAX/9NkSBRwjQqkQ6CY/cH3pxJi4B9UUQsQc2ATrEIfdgua0CgYEA4oAY
+ScXZKyC38eofhbXIXnUp9sYEAC+kOtgZBsAd/ia5jHpozqG1HtCrO6EaENnq7mEq
+0XOhdgIVyMPUmZuzyqYmZvtwB/2lLgufiVU0qFXL7hw/PmsjRr1aKIO/ffPDngED
+3hWEWTPfAb3PzcGM6Vwak3WHUr7S0+MP+KbOKfcCgYEAqU0QU1s+fbEs1AJDhbiG
+yOkTIAaBlVLeVfwfCLWg+ob2pzucl892X9+BNtzuR0A/imd/WqPW1VJZD0XjbFiI
+batn5u3G4vmOLiYuVfF88rXTVozDIo5NWVDZmHv1wvbhdi/pdtzg0/eisKA6H5Rm
+fP82Z6wzqWxyyOFdKuMpKZUCgYBjuZB4EtNeSMaUjceZQINbC20RiPfD+TXu7qx+
+K2JJP1Wcw1yX9dzgF3H9DB6E4t2sXT3UAHxLj/l1bruRcluD0wm/d99ItWXf0yBI
+ACryHuxuByPVYKikgcRLaE6MryIm1D2Wr5SZDdyXULJI3nojWPkeibWuOfRrdGLY
+0OCe2wKBgEmDwZhEOttNq0PEjYmS2Vm/+Zjmpq6bpFbvQTGVgr1R5OcdseLDmUJU
+WpF2UoIvukUZ98HscrqWWHlL3tRsMO1ZjmwAapNVzzjNaC6h76/wH9CN9hMYzDob
+MKRmUnfgq+OtKyGXRCRxDHJRe4PPkDLRosVwofdlpYqV/L5iU0Ml
+-----END RSA PRIVATE KEY-----
