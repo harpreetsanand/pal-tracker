@@ -8,8 +8,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -28,10 +30,14 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @SpringBootTest(classes = PalTrackerApplication.class, webEnvironment = RANDOM_PORT)
 public class TimeEntryApiTest {
 
-    @Autowired
-    private TestRestTemplate restTemplate;
+    //@Autowired
+    //private TestRestTemplate restTemplate;
 
     private TimeEntry timeEntry = new TimeEntry(123, 456, LocalDate.parse("2017-01-08"), 8);
+
+    @LocalServerPort
+    private String port;
+    private TestRestTemplate restTemplate;
 
     @Before
     public void setUp() throws Exception {
@@ -40,12 +46,18 @@ public class TimeEntryApiTest {
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
         jdbcTemplate.execute("TRUNCATE time_entries");
+
+        RestTemplateBuilder builder = new RestTemplateBuilder()
+                .rootUri("http://localhost:" + port)
+                .basicAuthorization("user", "password");
+
+        restTemplate = new TestRestTemplate(builder);
     }
 
     @Test
     public void testCreate() throws Exception {
-        ResponseEntity<String> createResponse = restTemplate.postForEntity("/time-entries", timeEntry, String.class);
 
+        ResponseEntity<String> createResponse = this.restTemplate.postForEntity("/time-entries", timeEntry, String.class);
 
         assertThat(createResponse.getStatusCode()).isEqualTo(HttpStatus.CREATED);
 
@@ -61,9 +73,7 @@ public class TimeEntryApiTest {
     public void testList() throws Exception {
         Long id = createTimeEntry();
 
-
         ResponseEntity<String> listResponse = restTemplate.getForEntity("/time-entries", String.class);
-
 
         assertThat(listResponse.getStatusCode()).isEqualTo(HttpStatus.OK);
 
@@ -100,7 +110,6 @@ public class TimeEntryApiTest {
 
 
         ResponseEntity<String> updateResponse = restTemplate.exchange("/time-entries/" + id, HttpMethod.PUT, new HttpEntity<>(updatedTimeEntry, null), String.class);
-
 
         assertThat(updateResponse.getStatusCode()).isEqualTo(HttpStatus.OK);
 
